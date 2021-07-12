@@ -3,7 +3,7 @@
 ## Introduction
 
 Hello, 
-Your assignment is to create an environment that launches two instances in AWS, installs required packages on them and deployes a Kubernetes cluster with the dockers given.
+Your assignment is to create an environment that launches two instances in AWS, installs Kubernetes and deployes a cluster with a given image.
 
 You should be able to test your environment with a free-tier AWS account and recreate this with any other AWS account.
 
@@ -12,27 +12,25 @@ In addition, you shuold create documentation that will allow any user to take th
 ## Tasks
 
 ### Terraform
-Create terraform scripts to launch two AWS instances, one for the Kubernetes master and one for the worker node.
+Create terraform scripts to launch two AWS instances (assuming there is a default VPC so you don't need to specific anything except for the region), one for the Kubernetes master and one for the worker node.
+
+### Ansible
+Create an ansible playbooks to install Kubernetes on the AWS instances.
 
 ### Kubernetes
 Create Kubernetes deployment with three replicas running [this image](https://hub.docker.com/r/gairadzi/webserver)
-
-### Ansible
-Create an ansible playbook to install relevant packages on the AWS instances.
-
-Create an ansible playbook to launch Kubernetes master on the relevnat AWS instance which the configuration to load the pods on the worker node
 
 ## Deliverables
 A GitHub Pull-Request to **YOUR DUPLICATED REPO**, containing:
 
 
-The terraform scripts
+* The terraform code
 
-Kuberenetes configuration for the cluster
+* Ansible roles which takes care of provisioning both the Kubernetes master and work nodes
 
-Ansible roles which takes care of provisioning both the Kubernetes master and work nodes
+* Ansible playbook to install the Kubernetes cluster
 
-Ansible playbook to launch the Kubernetes cluster
+* Kuberenetes deplyoment yaml
 
-README file with description of the code you added and how to use it
+* README file with instructions on how use this code and deploy the Kubernetes cluster
 
