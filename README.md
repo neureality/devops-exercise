@@ -3,34 +3,35 @@
 ## Introduction
 
 Hello, 
-Your assignment is to create an environment that launches two instances in AWS, installs Kubernetes and deployes a cluster with a given image.
+Your assignment is to create an environment that launches two instances in AWS, installs Kubernetes and deployes an application.
 
 You should be able to test your environment with a free-tier AWS account and recreate this with any other AWS account.
 
-In addition, you shuold create documentation that will allow any user to take the environment and be able to deploy the Kubernetes cluster.
+In addition, you shuold create documentation that will allow any user to take the code and bring it up in any AWS account.
 
 ## Tasks
 
 ### Terraform
-Create terraform scripts to launch two AWS instances (assuming there is a default VPC so you don't need to specific anything except for the region), one for the Kubernetes master and one for the worker node.
+Create terraform scripts to launch two AWS instances (assuming there is a default VPC so you don't need to specify anything except for the region), one for the Kubernetes master and one for the worker node.
 
 ### Ansible
-Create an ansible playbooks to install Kubernetes on the AWS instances.
+Create an ansible playbooks to install the Kubernetes components on the AWS instances.
 
-### Kubernetes
-Create Kubernetes deployment with three replicas running [this image](https://hub.docker.com/r/gairadzi/webserver)
+### Application
+Create Kubernetes deployment yaml with three replicas running [this image](https://hub.docker.com/r/gairadzi/webserver)
 
 ## Deliverables
+Please make sure you duplicate the repo and **do not fork it** ([duplicating-a-repository]https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository)
 A GitHub Pull-Request to **YOUR DUPLICATED REPO**, containing:
 
 
 * The terraform code
 
-* Ansible roles which takes care of provisioning both the Kubernetes master and work nodes
+* Ansible roles for Kubernetes master and work nodes
 
-* Ansible playbook to install the Kubernetes cluster
+* Ansible playbook and inventory to run the roles
 
 * Kuberenetes deplyoment yaml
 
-* README file with instructions on how use this code and deploy the Kubernetes cluster
+* README file with instructions on how use this code and bring up the environment
 
