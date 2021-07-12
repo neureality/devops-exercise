@@ -15,7 +15,7 @@ In addition, you shuold create documentation that will allow any user to take th
 Create terraform scripts to launch two AWS instances, one for the Kubernetes master and one for the worker node.
 
 ### Kubernetes
-Create Kubernetes configuration with a single namespace and two pods with the docker in 'images' folder on the worker node
+Create Kubernetes deployment with three replicas running dokcer the image in the repository
 
 ### Ansible
 Create an ansible playbook to install relevant packages on the AWS instances.
