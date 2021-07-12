@@ -22,6 +22,7 @@ Create Kubernetes deployment yaml with three replicas running [this image](https
 
 ## Deliverables
 Please make sure you duplicate the repo and **do not fork it** ([duplicating-a-repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository))
+
 A GitHub Pull-Request to **YOUR DUPLICATED REPO**, containing:
 
 
