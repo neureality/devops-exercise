@@ -12,16 +12,18 @@ In addition, you shuold create documentation that will allow any user to take th
 ## Tasks
 
 ### Terraform
-Create terraform scripts to launch two AWS instances (assuming there is a default VPC so you don't need to specify anything except for the region), one for the Kubernetes master and one for the worker node.
+Create terraform scripts to launch two AWS instances (assuming there is a default VPC and an existing key-pair), one for the Kubernetes master and one for the worker node.
+
+The user running the terraform command should provide two variables, AWS region and key-pair name.
 
 ### Ansible
-Create an ansible playbooks to install the Kubernetes components on the AWS instances.
+Create ansible roles to install the Kubernetes components on the AWS instances.
 
 ### Application
-Create Kubernetes deployment yaml with three replicas running [this image](https://hub.docker.com/r/gairadzi/webserver)
+Create Kubernetes deployment configuration with three replicas running [this image](https://hub.docker.com/r/gairadzi/webserver).
 
 ## Deliverables
-Please make sure you duplicate the repo and **do not fork it** ([duplicating-a-repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository))
+Please make sure you duplicate the repo and **do not fork it** ([duplicating-a-repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository)).
 
 A GitHub Pull-Request to **YOUR DUPLICATED REPO**, containing:
 
