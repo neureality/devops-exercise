@@ -6,14 +6,14 @@ Hello,
 
 Your assignment is to create an environment that launches two instances in AWS, installs Kubernetes and deploys an application.
 
-You should be able to test your environment with a free-tier AWS account and recreate this with any other AWS account.
+In order to test your environment you will be given a limited AWS account and user that will be able to load t2.small instances in eu-central-1 (Frankfurt) region.
 
 In addition, you should create documentation that will allow any user to take the code and bring it up in any AWS account.
 
 ## Tasks
 
 ### Terraform
-Create terraform scripts to launch two AWS instances (assuming there is a default VPC and an existing key-pair), one for the Kubernetes master and one for the worker node.
+Create terraform scripts to launch two AWS t3.small instances (assuming there is a default VPC and an existing key-pair), one for the Kubernetes master and one for the worker node.
 
 The user running the terraform command should provide two variables: AWS region and key-pair name.
 
