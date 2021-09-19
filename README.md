@@ -6,7 +6,7 @@ Hello,
 
 Your assignment is to create an environment that launches two instances in AWS, installs Kubernetes and deploys an application.
 
-In order to test your environment you will be given a limited AWS account and user that will be able to load t2.small instances in eu-central-1 (Frankfurt) region.
+In order to test your environment you will be given a limited AWS account and user that will be able to load t3.small instances in eu-central-1 (Frankfurt) region.
 
 In addition, you should create documentation that will allow any user to take the code and bring it up in any AWS account.
 
