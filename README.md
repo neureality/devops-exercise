@@ -28,8 +28,14 @@ Create a Python HTTP application which will provide a single API on the URL: `/r
 The API should receive as string via "in" query parameter via GET HTTP request, and return a JSON with a field named "result" and its value should be the string provided with the words in reverse order.
 
 For example:
-in = "The quick brown fox jumps over the lazy dog"
-result = "dog lazy the over jumps fox brown quick The"
+For in value of:
+```
+The quick brown fox jumps over the lazy dog"
+```
+Result value should be:
+```
+dog lazy the over jumps fox brown quick The
+```
 
 The application container should be stored on DockerHub.
 
