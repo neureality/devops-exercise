@@ -24,8 +24,13 @@ Create ansible roles to install the Kubernetes components on the AWS instances.
 Create Kubernetes deployment configuration with three replicas running the application below.
 
 ### Application
-Create a Python HTTP application based on Flask (https://palletsprojects.com/p/flask/) which will provide a single API on the URL: `/hello`.
-The API reponse will return `Hello world!` when called.
+Create a Python HTTP application which will provide a single API on the URL: `/reverse`.
+The API should receive as string via "in" query parameter via GET HTTP request, and return a JSON with a field named "result" and its value should be the string provided with the words in reverse order.
+
+For example:
+in = "The quick brown fox jumps over the lazy dog"
+result = "dog lazy the over jumps fox brown quick The"
+
 The application container should be stored on DockerHub.
 
 
